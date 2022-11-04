@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main (){
+	int n1, resultado=0;
+	printf ("Digite um numero: ");
+	scanf ("%d", &n1);
+	if (resultado = n1%2)
+	printf ("%d eh impar", n1);
+	else 
+	printf ("%d eh par", n1);
+}
