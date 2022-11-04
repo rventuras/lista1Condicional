@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (){
+	int e;
+	float s;
+	printf ("Insira o salario:\n ");
+	scanf ("%f", &s);
+	printf ("e o valor do emprestimo:\n ");
+	scanf ("%d", &e);
+	if (e > s * 0.2)
+	printf ("Emprestimo Negado");
+	else
+	printf ("Emprestimo Aceito"); 
+	
+	
+}
