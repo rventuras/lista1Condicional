@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main (){
+	int h, peso;
+	char sexo;
+	printf ("Insira sua altura em cm: ");
+	scanf ("%d", &h);
+	printf ("Insira seu genero com M ou F: ");
+	scanf ("%c", &sexo);
+	if (sexo == 'm')
+	{
+			peso = (72,7 * h) - 58;
+			printf ("seu peso ideal eh de %d", peso);
+	}
+	else 
+	{
+		peso = (62,1 * h) - 44,7;
+		printf ("seu peso ideal eh de %d", peso);
+	}
+}
