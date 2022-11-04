@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main (){
+	int num, raiz, potencia;
+	printf ("Insira um num: ");
+	scanf ("%d", &num);
+	if (num > 0)
+	{
+		raiz = sqrt(num);
+		potencia = pow (num, 2);
+		printf ("raiz eh igual a %d e potencia eh %d", raiz, potencia);
+		
+	}
+	else 
+	printf ("num invalido");
+}
