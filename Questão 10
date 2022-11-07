@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main(){
+    float altura,peso;
+    printf("Insira sua altura: ");
+    scanf("%f",&altura);
+    printf("E seu peso: ");
+    scanf("%f",&peso);
+    if(altura <= 1.20 && peso < 60)
+    {
+        printf("Sua classificacao eh A");
+    }
+    else if(altura <= 1.20 && peso >60 && peso <90)
+    {
+        printf("Sua classificaçao eh B");
+    }
+    else if (altura <= 1.20 && peso >90)
+    {
+     printf("Sua classificaçao eh G");  
+    }
+    else if (altura >= 1.20 && altura <=1.70 && peso < 60)
+    {
+        printf("Sua classificaçao eh B");
+    }
+    else if(altura >= 1.20&&altura <=1.70 && peso >60 && peso <90)
+    {
+         printf("Sua classificaçao eh E");
+    }
+    else if(altura >= 1.20 && altura <=1.70 && peso>90)
+    {
+         printf("Sua classificaçao eh H");
+    }
+    else if (altura >=1.70 && peso <60)
+    {
+        printf("Sua classificaçao eh C");
+    }
+    else if(altura >=1.70 && peso >60 && peso <90)
+    {
+        printf("Sua classificaçao eh F");
+    } else if (altura >= 1.70 && peso >90)
+    {
+        printf("Sua classificaçao eh I");
+    }
+}
