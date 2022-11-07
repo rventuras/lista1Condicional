@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+int main (){
+    float mg,sp,rj,ms,venda;
+    char estado[2];
+    printf("Insira o valor da venda:");
+    scanf("%f",&venda);
+    printf("Insira o estado com letras maiusculas:");
+    scanf("%s",&estado);
+    
+    
+    if (strcmp(estado,"MG")==0) 
+    {
+        mg= venda + (venda * 0.07);
+        printf("O valor da venda para MG eh %.2f",mg);
+    }
+        else if(estado=="SP")
+        {
+        sp= venda + (venda * 0.12);
+        printf("O valor da venda para SP eh %.2f",sp);
+        }
+            else if(estado=="RJ")
+            {
+                rj= venda + (venda * 0.15);
+                printf("O valor da venda para RJ eh %.2f",rj);
+            }
+                else if (estado=="MS")
+                {
+                    ms= venda + (venda * 0.08);
+                    printf("O valor da venda para MS eh %.2f",ms);
+                    }
+                    else
+                    {
+                        printf("o estado nao esta no nosso banco de dados");
+                    }
+            
+}
