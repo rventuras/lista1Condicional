@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main (){
+    char op;
+    int n1, n2, resultado;
+    printf ("Insira uma operacao: ");
+    scanf ("%c", &op);
+    printf ("Insira n1 e n2: ");
+    scanf ("%d%d", &n1, &n2);
+    switch (op)
+    {
+    case '+':
+    resultado = n1 + n2;
+    printf ("Resultado eh %d", resultado);
+        
+        break;
+        case '-':
+        resultado = n1 - n2;
+        printf ("Resultado eh %d", resultado);
+        break;
+        case '*':
+        resultado = n1 * n2;
+        printf ("Resultado eh %d", resultado);
+        break;
+        case '/':
+        resultado = n1 / n2;
+        printf ("Resultado eh %d", resultado);
+        break;
+    
+    default: 
+    printf ("Operacao invalida");
+        break;
+    }
+}
