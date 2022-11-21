@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main (){
+     int i ,div3,div5;
+    printf("Insira um numero:");
+    scanf("%d",&i);
+  div3= i % 3;
+  div5= i % 5;
+  
+    if (div3==0 && div5==0)
+    {
+        printf("Esse numero eh divisivel por 3 e 5");
+    }
+    else if(div3==0)
+    {
+        printf("Numero divisivel por 3");
+    }else if(div5==0)
+    {
+        printf("Numero divisivel por 5");
+    }  else if(div3>0 && div5 > 0)
+    {
+        printf("Numero nao eh divisivel por 3 e por 5");
+    }
+}
