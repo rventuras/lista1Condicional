@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int main (){
+    float a,b,c,delta,raiz,raiz2;
+    printf("Insira o valor de A:");
+    scanf("%f",&a);
+    printf("Insira o valor de B:");
+    scanf("%f",&b);
+    printf("Insira o valor de C:");
+    scanf("%f",&c);
+        if (a== 0)
+        {
+            printf("Nao eh uma equaçao de segundo grau");
+        }else {
+            
+            delta = pow(b,2) - 4 * a * c;
+        if (delta <0 )
+        {
+            printf("Numero sem raiz");
+        }else if (delta == 0)
+        {
+            raiz= (-1*b) /(2*a);
+           printf("Raiz com valor de %.2f",raiz) ;
+        }else if (delta >0)
+        {
+            raiz =((-1*b) + sqrt(delta)) /(2*a);
+            raiz2 =((-1*b) - sqrt(delta)) /(2*a);
+            printf("Duas raizes com valores %.1f e %.1f",raiz,raiz2);
+        }
+        
+    
+    }
+}
