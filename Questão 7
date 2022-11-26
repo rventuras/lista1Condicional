@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main (){
+    int a, b, c, d, soma, soma2, div;
+    printf ("Insira o valor de A, B, C e D: ");
+    scanf ("%d%d%d%d", &a, &b, &c, &d);
+    soma =  c + d;
+    soma2 = a + b;
+    div = a % 2;
+    if (b > c && d > a && soma > soma2 && c > 0 && d > 0 && div == 0)
+    {
+        printf ("Valores aceitos!");
+    }
+     else
+    
+    printf ("Valores nao aceitos");
+
+}
