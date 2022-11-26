@@ -2,6 +2,7 @@
 int main (){
     char op;
     int n1, n2, resultado;
+    printf (" Soma = +\nSubtracao = -\nMultiplicacao = *\nDivisao = /");
     printf ("Insira uma operacao: ");
     scanf ("%c", &op);
     printf ("Insira n1 e n2: ");
